@@ -32,7 +32,7 @@ export function LogoAnimation({ onBreak }: LogoAnimationProps) {
       // so each flies from the same origin to its respective corner.
       const vw = window.innerWidth;
       const vh = window.innerHeight;
-      const pad = vw >= 768 ? 24 : 16;
+      const pad = vw >= 768 ? 32 : 24;
 
       const sr = shapeRef.current!.getBoundingClientRect();
       const ar = sateRef.current!.getBoundingClientRect();
@@ -64,13 +64,13 @@ export function LogoAnimation({ onBreak }: LogoAnimationProps) {
       <img
         src="/SHAPE.svg"
         alt="SHAPE"
-        className={`fixed top-4 right-4 md:top-6 md:right-6 block w-[30vw] md:w-[18vw] h-auto pointer-events-none z-50 ${settled ? '' : 'invisible'}`}
+        className={`fixed top-6 right-6 md:top-8 md:right-8 block w-[30vw] md:w-[14vw] h-auto pointer-events-none z-50 ${settled ? '' : 'invisible'}`}
         aria-hidden
       />
       <img
         src="/&SATE.svg"
         alt="SATE"
-        className={`fixed bottom-4 left-4 md:bottom-6 md:left-6 block w-[30vw] md:w-[18vw] h-auto pointer-events-none z-50 ${settled ? '' : 'invisible'}`}
+        className={`fixed bottom-6 left-6 md:bottom-8 md:left-8 block w-[30vw] md:w-[14vw] h-auto pointer-events-none z-50 ${settled ? '' : 'invisible'}`}
         aria-hidden
       />
 
@@ -83,7 +83,7 @@ export function LogoAnimation({ onBreak }: LogoAnimationProps) {
         <motion.div
           animate={containerControls}
           initial={{ scale: 0.3 }}
-          className="relative w-[30vw] md:w-[18vw] aspect-[357/462]"
+          className="relative w-[30vw] md:w-[14vw] aspect-[357/462]"
         >
           {/* Both divs fill the container identically — perfect overlap */}
           <motion.div

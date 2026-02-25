@@ -16,6 +16,12 @@
   --color-purple: #BC90F4;
   --color-blue: #3C82F7;
   --text-10xl: 9.5rem;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1491px;
+  --breakpoint-3xl: 1720px;
 }
 
 *,
