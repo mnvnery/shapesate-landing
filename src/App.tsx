@@ -23,7 +23,7 @@ function App() {
   const [revealed, setRevealed] = useState(false);
 
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center md:justify-between py-10 bg-black text-white max-sm:justify-center">
+    <main className="relative flex min-h-[100dvh] flex-col items-center justify-center md:justify-between py-10 bg-black text-white max-sm:justify-center">
       <LogoAnimation onBreak={() => setRevealed(true)} />
 
       <div></div>
@@ -73,7 +73,7 @@ function App() {
       </section>
 
       {/* Tagline: line-by-line overflow-hidden reveal */}
-      <div className="self-end mx-12 md:mx-[5%] text-center md:text-left fl-text-base/2xl max-w-md font-sans leading-tight text-white">
+      <div className="md:self-end mx-12 md:mx-[5%] text-center md:text-left fl-text-base/2xl max-w-md font-sans leading-tight text-white">
         {taglineLines.map((line, i) => (
           <span key={line} className="block overflow-hidden pb-[0.2em] -mb-[0.2em]">
             <motion.span
