@@ -14,9 +14,8 @@ const lineReveal = {
 
 // Split so each string is a natural visual line at max-w-md
 const taglineLines = [
-  'Your go-to partner for',
-  'property guidance, support and',
-  'curated retail and leisure spaces.',
+  'Unlocking potential through',
+  'curated retail and leisure spaces.'
 ];
 
 function App() {
