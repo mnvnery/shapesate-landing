@@ -12,7 +12,9 @@ const lineReveal = {
   visible: { y: '0%', opacity: 1 },
 };
 
-// Split so each string is a natural visual line at max-w-md
+// Full subcopy for desktop (one line under title)
+const taglineOneLine = "Unlocking potential through curated retail and leisure spaces.";
+// Split for mobile (line-by-line reveal, current position)
 const taglineLines = [
   'Unlocking potential through',
   'curated retail and leisure spaces.'
@@ -47,6 +49,23 @@ function App() {
           ))}
         </h1>
 
+        {/* Desktop: subcopy in one line directly under title */}
+        <div className="hidden md:block overflow-hidden mb-8 max-w-2xl mx-auto">
+          <motion.span
+            className="block text-base md:text-lg 3xl:text-2xl font-sans leading-tight text-white text-center"
+            variants={lineReveal}
+            initial="hidden"
+            animate={revealed ? 'visible' : 'hidden'}
+            transition={{
+              duration: 0.65,
+              ease: [0.22, 1, 0.36, 1],
+              delay: 0.5,
+            }}
+          >
+            {taglineOneLine}
+          </motion.span>
+        </div>
+
         <motion.div
           className="flex justify-center mt-2 mb-10 md:mt-5 gap-4"
           variants={fadeUp}
@@ -71,8 +90,8 @@ function App() {
         </motion.div>
       </section>
 
-      {/* Tagline: line-by-line overflow-hidden reveal */}
-      <div className="md:self-end mx-12 md:mx-[5%] lg:mx-[10%] text-center md:text-left text-base md:text-lg 3xl:text-2xl max-w-md font-sans leading-tight text-white">
+      {/* Tagline (mobile only): line-by-line overflow-hidden reveal, keep current position */}
+      <div className="md:hidden mx-12 text-center text-base max-w-md font-sans leading-tight text-white">
         {taglineLines.map((line, i) => (
           <span key={line} className="block overflow-hidden pb-[0.2em] -mb-[0.2em]">
             <motion.span
