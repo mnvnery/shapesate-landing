@@ -91,7 +91,7 @@ function App() {
       </section>
 
       {/* Tagline (mobile only): line-by-line overflow-hidden reveal, keep current position */}
-      <div className="md:hidden mx-12 text-center text-base max-w-md font-sans leading-tight text-white">
+      <div className="md:hidden mx-12 text-center text-base max-w-md font-sans font-light leading-tight text-white">
         {taglineLines.map((line, i) => (
           <span key={line} className="block overflow-hidden pb-[0.2em] -mb-[0.2em]">
             <motion.span
