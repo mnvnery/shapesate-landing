@@ -50,9 +50,9 @@ function App() {
         </h1>
 
         {/* Desktop: subcopy in one line directly under title */}
-        <div className="hidden md:block overflow-hidden mb-6 max-w-3xl mx-auto">
+        <div className="block overflow-hidden mb-6 max-w-3xl mx-auto">
           <motion.span
-            className="block text-base md:text-lg lg:text-[24px] 3xl:text-[26px] font-sans font-light leading-tight text-white text-center"
+            className="block px-8 md:px-0 text-[18px] md:text-lg lg:text-[24px] 3xl:text-[26px] font-sans font-light leading-tight text-white text-center"
             variants={lineReveal}
             initial="hidden"
             animate={revealed ? 'visible' : 'hidden'}
@@ -89,27 +89,6 @@ function App() {
           </a>
         </motion.div>
       </section>
-
-      {/* Tagline (mobile only): line-by-line overflow-hidden reveal, keep current position */}
-      <div className="md:hidden mx-12 text-center text-base max-w-md font-sans font-light leading-tight text-white">
-        {taglineLines.map((line, i) => (
-          <span key={line} className="block overflow-hidden pb-[0.2em] -mb-[0.2em]">
-            <motion.span
-              className="block"
-              variants={lineReveal}
-              initial="hidden"
-              animate={revealed ? 'visible' : 'hidden'}
-              transition={{
-                duration: 0.65,
-                ease: [0.22, 1, 0.36, 1],
-                delay: 0.56 + i * 0.09,
-              }}
-            >
-              {line}
-            </motion.span>
-          </span>
-        ))}
-      </div>
     </main>
   );
 }
