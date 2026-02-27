@@ -50,9 +50,9 @@ function App() {
         </h1>
 
         {/* Desktop: subcopy in one line directly under title */}
-        <div className="hidden md:block overflow-hidden mb-8 max-w-2xl mx-auto">
+        <div className="hidden md:block overflow-hidden mb-6 max-w-3xl mx-auto">
           <motion.span
-            className="block text-base md:text-lg 3xl:text-2xl font-sans leading-tight text-white text-center"
+            className="block text-base md:text-lg lg:text-[24px] 3xl:text-[26px] font-sans font-light leading-tight text-white text-center"
             variants={lineReveal}
             initial="hidden"
             animate={revealed ? 'visible' : 'hidden'}
@@ -75,7 +75,7 @@ function App() {
         >
           <a
             href="mailto:info@shapeandsate.com"
-            className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg 3xl:text-2xl text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-purple"
+            className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg lg:text-[22px] 3xl:text-[24px] text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-purple"
           >
             Let's Talk
           </a>
@@ -83,7 +83,7 @@ function App() {
             href="https://www.rightmove.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg 3xl:text-2xl text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-blue"
+            className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg lg:text-[22px] 3xl:text-[24px] text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-blue"
           >
             View Properties
           </a>
