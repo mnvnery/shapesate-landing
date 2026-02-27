@@ -15,10 +15,6 @@ const lineReveal = {
 // Full subcopy for desktop (one line under title)
 const taglineOneLine = "Unlocking potential through curated retail and leisure spaces.";
 // Split for mobile (line-by-line reveal, current position)
-const taglineLines = [
-  'Unlocking potential through',
-  'curated retail and leisure spaces.'
-];
 
 function App() {
   const [revealed, setRevealed] = useState(false);
