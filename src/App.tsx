@@ -70,13 +70,13 @@ function App() {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.44 }}
         >
           <a
-            href="mailto:info@shapeandsate.com"
+            href="mailto:alex@shapeandsate.com,nicola@shapeandsate.com"
             className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg lg:text-[22px] 3xl:text-[24px] text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-purple"
           >
             Let's Talk
           </a>
           <a
-            href="https://www.rightmove.co.uk/"
+            href="https://www.rightmove.co.uk/estate-agents/agent/Shape-and-Sate/Manchester-300269.html?transactionType=lettings"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-5 md:px-10 py-1 md:py-2 font-sans text-base md:text-lg lg:text-[22px] 3xl:text-[24px] text-black no-underline rounded-full border-none cursor-pointer transition-color hover:bg-white duration-200 hover:-translate-y-0.5 bg-blue"
